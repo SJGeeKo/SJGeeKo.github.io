@@ -13,7 +13,7 @@ title: ELB(Elastic Beanstalk)로 구현한 API 서버 HTTPS 전환
 ## 배움의 흐름
 
 - HTTPS → SSL → ROUTE53 → 서브도메인 → ACM → 로드밸런서
-- HTTPS와 SSL 공부 관련 기록은 [따로 정리]([https://sjgeeko.github.io/https와-ssl-인증서-개념-정리/](https://sjgeeko.github.io/https%EC%99%80-ssl-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC/))함
+- HTTPS와 SSL 공부 관련 기록은 [따로 정리](https://sjgeeko.github.io/https%EC%99%80-ssl-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC/)함
 
 ## ACM(AWS Certificate Manager)란?
 
@@ -21,7 +21,7 @@ title: ELB(Elastic Beanstalk)로 구현한 API 서버 HTTPS 전환
 - 인증서 무료 - 애플리케이션을 실행하기 위해 생성한 AWS 리소스에 대한 비용만 지불하면 됨
 - HTTPS 통신을 위해 인증서는 필수이므로 우선 이 서비스를 이용하여 인증서를 발급받아야 함
 
-다음으로 발급받은 인증서를 서버에 등록하는 방식을 찾아봤음. 내 API 서버는 바로 EC2에 올린 것이 아니라 ELB(Elastic Beanstalk)를 통해 올려져 있는 상태였기 때문에 왠지 특별한 방법이 있을 것 같아 관련 문서를 찾아봤음 → [이 문서]([https://kokohapps.tistory.com/entry/Elastic-Beanstalk-로-서버운영하기-2-도메인-연결-HTTPS-연결](https://kokohapps.tistory.com/entry/Elastic-Beanstalk-%EB%A1%9C-%EC%84%9C%EB%B2%84%EC%9A%B4%EC%98%81%ED%95%98%EA%B8%B0-2-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%97%B0%EA%B2%B0-HTTPS-%EC%97%B0%EA%B2%B0))의 도움을 받았다.
+다음으로 발급받은 인증서를 서버에 등록하는 방식을 찾아봤음. 내 API 서버는 바로 EC2에 올린 것이 아니라 ELB(Elastic Beanstalk)를 통해 올려져 있는 상태였기 때문에 왠지 특별한 방법이 있을 것 같아 관련 문서를 찾아봤음 → [이 문서](https://kokohapps.tistory.com/entry/Elastic-Beanstalk-%EB%A1%9C-%EC%84%9C%EB%B2%84%EC%9A%B4%EC%98%81%ED%95%98%EA%B8%B0-2-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%97%B0%EA%B2%B0-HTTPS-%EC%97%B0%EA%B2%B0)의 도움을 받았다.
 
 <aside>
 💡 글에 포함된 스크린샷이 현재의 AWS UI와 약간 다르긴 한데 큰 어려움 없이 따라할 수 있었다.
