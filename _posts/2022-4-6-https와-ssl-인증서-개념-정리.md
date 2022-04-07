@@ -2,6 +2,9 @@
 layout: post
 title: HTTPS와 SSL 인증서 개념 정리
 ---
+
+참고: [생활코딩](https://opentutorials.org/course/228/4894)
+
 - HTTPS는 보안 강화된 HTTP임
 - HTTPS와 SSL의 관계
     - SSL 프로토콜 위에서 위에서 HTTPS 프로토콜이 동작하는 것
