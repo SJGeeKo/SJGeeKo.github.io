@@ -4,7 +4,7 @@ title: ELB(Elastic Beanstalk)로 구현한 API 서버 HTTPS 전환
 ---
 잘 쓰던 앱에 커뮤니티 기능(사진 업로드, 글쓰기 등을 포함)이 추가된 버전을 업데이트를 하려고 심사를 넣었더니 **유저 관련 데이터 전송이 안전한 방식으로 이뤄지지 않고 있다며 HTTPS 등의 통신방식으로 바꾼 뒤 재심사** 하라는 메일을 받음.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6117a83-6833-4407-8e07-1640daad2b5b/Untitled.png)
+![Untitled](./0407.png)
 
 백엔드 서버를 API 방식으로 구현하여 사용하고 있었는데 이 과정에서 HTTPS가 아닌 HTTP 통신을 하고 있었다.
 
