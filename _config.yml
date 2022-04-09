@@ -9,7 +9,7 @@ name: 고성준 - 30대에 개발자되기
 description: 늦었다고 생각할 때가 진짜 너무 늦었다
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://s3.us-west-2.amazonaws.com/secure.notion-static.com/af9904e1-c050-411a-b2ff-ba6a7c90b624/profile_icon.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220406%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220406T070632Z&X-Amz-Expires=86400&X-Amz-Signature=b90d6d40c9b736d5fefc08517e988aaa13227f0c4a15c4825db0115a828f767b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22profile_icon.jpg%22&x-id=GetObject
+avatar: http://drive.google.com/uc?export=view&id=1_JJHU5b7QfQFGReMa1O1asUYXyAopqRG
 
 #
 # Flags below are optional
@@ -18,7 +18,7 @@ avatar: https://s3.us-west-2.amazonaws.com/secure.notion-static.com/af9904e1-c05
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: sungjun.ko.dev@gmail.com
   facebook:
   flickr:
   github: barryclark/jekyll-now
@@ -26,9 +26,9 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: channel/UCrwO_nVq_QsVzgWRjDZn18A
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
