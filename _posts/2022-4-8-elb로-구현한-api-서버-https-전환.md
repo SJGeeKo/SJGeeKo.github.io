@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ELB(Elastic Beanstalk)로 구현한 API 서버 HTTPS 전환
+published: true
 ---
 잘 쓰던 앱에 커뮤니티 기능(사진 업로드, 글쓰기 등을 포함)이 추가된 버전을 업데이트를 하려고 심사를 넣었더니 **유저 관련 데이터 전송이 안전한 방식으로 이뤄지지 않고 있다며 HTTPS 등의 통신방식으로 바꾼 뒤 재심사** 하라는 메일을 받음.
 
@@ -23,10 +24,7 @@ title: ELB(Elastic Beanstalk)로 구현한 API 서버 HTTPS 전환
 
 다음으로 발급받은 인증서를 서버에 등록하는 방식을 찾아봤음. 내 API 서버는 바로 EC2에 올린 것이 아니라 ELB(Elastic Beanstalk)를 통해 올려져 있는 상태였기 때문에 왠지 특별한 방법이 있을 것 같아 관련 문서를 찾아봤음 → [이 문서](https://kokohapps.tistory.com/entry/Elastic-Beanstalk-%EB%A1%9C-%EC%84%9C%EB%B2%84%EC%9A%B4%EC%98%81%ED%95%98%EA%B8%B0-2-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%97%B0%EA%B2%B0-HTTPS-%EC%97%B0%EA%B2%B0)의 도움을 받았다.
 
-<aside>
-💡 글에 포함된 스크린샷이 현재의 AWS UI와 약간 다르긴 한데 큰 어려움 없이 따라할 수 있었다.
-
-</aside>
+> 💡 글에 포함된 스크린샷이 현재의 AWS UI와 약간 다르긴 한데 큰 어려움 없이 따라할 수 있었다.
 
 해당 문서의 ‘첫 부분에 Route 53에 내 도메인이 등록되어 있어야 한다’는 언급이 있는데 나는 Route 53이 뭔지조차 몰랐다.
 
